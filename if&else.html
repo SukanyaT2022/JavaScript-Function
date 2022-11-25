@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!--Create an HTML page which has a label saying enter number, a textbox and a button. On click of button call a function which reads a number from the text box and prints whether its positive, negative or zero-->
+
+<label>Enter Number</label>
+<input type="text" id="checkNumber">
+<input type="button" value="Submit" onclick="showResult()">
+
+<script>
+function showResult(){
+var num = parseInt(document.getElementById("checkNumber").value)
+//positive mean >0
+if(num>0){
+    alert(num + "  is positive")
+}
+//<0 is negative
+else if(num<0){
+    alert(num + "  is negative")
+}
+
+else {
+    alert(num + "  is zero")
+}
+}
+
+
+</script>
+
+
+</body>
+</html>

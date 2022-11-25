@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--add number use parint-->
+    <label>Enter Your Name</label>
+    <input type="text" id="putName">
+    <input type="button" value="Submit" onclick="showName()">
+
+    <label>Enter Your Age</label>
+    <input type="text" id="putAge">
+    <input type="button" value="Submit Age" onclick="showAge()">
+
+
+
+
+
+
+
+
+    <script>
+        function showName() {
+            var name = document.getElementById("putName").value
+            alert("Hello " + name)
+
+        }
+        function showAge() {
+            var age = parseInt(document.getElementById("putAge").value)
+            alert("Your age is  " + age)
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

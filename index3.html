@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!--Create an HTML page which has a label saying enter number, a textbox and a button. On click of button call a function which reads a number from the text box and prints its square-->
+
+<label>Enter Number</label>
+<input type="text" id="enterNumber">
+<input type="button" value="submit" onclick="showDetail()"><br>
+<label >Result</label>
+<input type="text" id="result">
+
+<script>
+function showDetail(){
+var tellNumber= parseInt(document.getElementById("enterNumber").value)
+document.getElementById("result").value=tellNumber*tellNumber
+
+
+}
+
+</script>
+
+
+</body>
+</html>

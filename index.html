@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Create an HTML form which has a label saying enter name, a textbox and a button. On click of button call a Javascript function which reads the name from the text box and prints a message saying Hello followed buy username-->
+
+<label>Enter Your Name</label>
+<input type="text" id="putName">
+<input type="button" value="Submit" onclick="showName()">
+
+<script>
+function showName(){
+   var name= document.getElementById("putName").value
+   alert("Hello " + name)
+
+}
+
+
+
+</script>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
